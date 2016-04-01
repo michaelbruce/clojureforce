@@ -1,0 +1,23 @@
+# Go to Setup > Develop > Remote Access
+# Create new remote access with https://login.salesforce.com as the callback URL and No user approval ... checked
+# Make sure the properties are in this exact order as authentication can fail otherwise
+
+
+TEST_UAT:
+    host: test.salesforce.com
+    client_secret: 7596699423353409936
+    client_id: 3MVG9MHOv_bskkhTlnG3y8TwhUfqP.09xz7K_6zfFh7RGYT7UVYk_BW9fbFvnPf3yPyjXgOYkrcmsXu18K.q_
+    debugging: true
+    username: creativemagnet@elasticpen.com
+    password: 6oPb3Jq9NXPq
+    sec_token:
+    prefix: TD
+TEST_PROD:
+    host: login.salesforce.com
+    client_secret: 1336619162893475837
+    client_id: 3MVG9PhR6g6B7ps4AwTE83xJ1PiMrGbBfx0Cvkeqs8_TSLzzhGh.7cTAjJdNNM4Q.MrO07P.BojicMkgxr2iX
+    debugging: true
+    username: mellow@sarge.com
+    password: sdfaj89b3
+    sec_token: vPW5HYOK70G7vuPDiiOdA7Lkh
+    prefix: TD
