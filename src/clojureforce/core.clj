@@ -4,7 +4,13 @@
 
 (def config-file (io/file (io/resource "oauth.yml")))
 
-(str/split (slurp config-file) #"\n")
+(def lines (map-indexed vector (str/split (slurp config-file) #"\n")))
+
+(for [line lines]
+  (println (last line)))
+
+(for [line (str/split (slurp config-file) #"\n")]
+  (println line))
 
 (defn foo
   "I don't do a whole lot."
